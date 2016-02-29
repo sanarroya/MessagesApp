@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MasterViewModel.h"
+#import "AppAppearance.h"
+#import "MailTableViewCell.h"
 
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-
+@property (nonatomic,retain) MasterViewModel *viewModel;
 
 @end
 

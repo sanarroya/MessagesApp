@@ -1,0 +1,6 @@
+framework module Pods_Zemoga_Obj_c {
+  umbrella header "Pods-Zemoga Obj-c-umbrella.h"
+
+  export *
+  module * { export * }
+}

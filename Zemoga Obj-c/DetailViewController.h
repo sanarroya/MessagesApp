@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppAppearance.h"
+#import "DetailViewModel.h"
+#import "MessageModelMapping.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (nonatomic,retain) DetailViewModel *viewModel;
+@property (strong, nonatomic) Message *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
 @end
 

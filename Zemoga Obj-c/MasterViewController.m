@@ -9,21 +9,25 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
-@interface MasterViewController ()
+@interface MasterViewController () <MailTableViewCellDelegate>
 
-@property NSMutableArray *objects;
+@property (nonatomic) MasterViewModel *vmodel;
 @end
 
 @implementation MasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    [self setTitle:@"Your Messages"];
+    [AppAppearance setNavigationBarApperanceTo:self.navigationController.navigationBar];
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    @weakify(self)
+    self.viewModel = [[MasterViewModel alloc] init];
+    [_viewModel.rac_getMessages subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -36,21 +40,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        Message *object = _viewModel.messages[indexPath.row];
+        [object setUnread: NO];
+        [self.tableView reloadData];
+        [self.tableView selectRowAtIndexPath:indexPath animated:UITableViewRowAnimationNone scrollPosition:UITableViewRowAnimationNone];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         [controller setDetailItem:object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -65,14 +64,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return _viewModel.messages.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    MailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.delegate = self;
+    [cell configureCellWithMessage:_viewModel.messages[indexPath.row]];
     return cell;
 }
 
@@ -81,13 +79,35 @@
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
+/**
+ *  MailTableViewCell delegate method, this method deletes the cell from the table
+ *
+ *  @param cell Cell to delete
+ */
+- (void)didTappedDismissButton:(id)cell {
+    MailTableViewCell *mailCell = (MailTableViewCell *)cell;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:mailCell];
+    NSArray *indexesPath = [[NSArray alloc] initWithObjects:indexPath, nil];
+    [self.tableView beginUpdates];
+    [self.tableView deleteRowsAtIndexPaths:indexesPath withRowAnimation:UITableViewRowAnimationLeft];
+    [_viewModel.messages removeObjectAtIndex:indexPath.row];
+    [self.tableView endUpdates];
 }
 
+/**
+ *  Removes all the messages from the table
+ *
+ *  @param sender Button that triggers the action
+ */
+- (IBAction)dismissAllMessagesAction:(id)sender {
+    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+    for (int i = 0; i < _viewModel.messages.count; i++) {
+        
+        [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+    }
+    [self.tableView beginUpdates];
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    [_viewModel.messages removeAllObjects];
+    [self.tableView endUpdates];
+}
 @end

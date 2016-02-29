@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Zemoga Obj-c
+//  prueba
 //
 //  Created by Santiago Avila Arroyave on 2/28/16.
 //  Copyright © 2016 Santiago Avila Arroyave. All rights reserved.

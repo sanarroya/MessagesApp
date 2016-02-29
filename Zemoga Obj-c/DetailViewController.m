@@ -1,4 +1,4 @@
-//
+
 //  DetailViewController.m
 //  Zemoga Obj-c
 //
@@ -16,25 +16,27 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
+- (void)setDetailItem:(Message *)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-            
-        // Update the view.
+        _viewModel = [[DetailViewModel alloc] initWithMessage:_detailItem];
         [self configureView];
     }
 }
 
+/**
+ *  Update the user interface for the message item.
+ */
 - (void)configureView {
-    // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        _detailDescriptionLabel.text = _viewModel.subjectText;
+        _messageLabel.text = _viewModel.messageText;
     }
+    [AppAppearance setNavigationBarApperanceTo:self.navigationController.navigationBar];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
 

@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CFA21C732BEE3A28CC6B069 /* Pods_Zemoga_Obj_c.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828CC99F218627351E7494C3 /* Pods_Zemoga_Obj_c.framework */; };
+		D9AA60D21C8356B900D34BAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60D11C8356B900D34BAC /* main.m */; };
+		D9AA60D81C8356B900D34BAC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60D71C8356B900D34BAC /* MasterViewController.m */; };
+		D9AA60DB1C8356B900D34BAC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60DA1C8356B900D34BAC /* DetailViewController.m */; };
+		D9AA60DE1C8356B900D34BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AA60DC1C8356B900D34BAC /* Main.storyboard */; };
+		D9AA60E01C8356B900D34BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AA60DF1C8356B900D34BAC /* Assets.xcassets */; };
+		D9AA60E31C8356B900D34BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AA60E11C8356B900D34BAC /* LaunchScreen.storyboard */; };
+		D9AA60EE1C8356B900D34BAC /* Zemoga_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60ED1C8356B900D34BAC /* Zemoga_Obj_cTests.m */; };
+		D9AA60F91C8356B900D34BAC /* Zemoga_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60F81C8356B900D34BAC /* Zemoga_Obj_cUITests.m */; };
+		D9AA61151C835B6B00D34BAC /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA61121C835B6B00D34BAC /* APIManager.m */; };
+		D9AA61161C835B6B00D34BAC /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA61141C835B6B00D34BAC /* SessionManager.m */; };
+		D9AA61191C835D1600D34BAC /* MessageModelMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA61181C835D1600D34BAC /* MessageModelMapping.m */; };
+		D9AA611C1C835F8200D34BAC /* ResponseModelMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA611B1C835F8200D34BAC /* ResponseModelMapping.m */; };
+		D9AA611F1C8364B700D34BAC /* DetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA611E1C8364B700D34BAC /* DetailViewModel.m */; };
+		D9AA61221C83681900D34BAC /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA61211C83681900D34BAC /* MasterViewModel.m */; };
+		D9AA61281C83A64E00D34BAC /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA61271C83A64E00D34BAC /* UIColor+Additions.m */; };
+		D9AA612B1C83A73200D34BAC /* AppAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA612A1C83A73200D34BAC /* AppAppearance.m */; };
+		D9AA612E1C83A9A200D34BAC /* MailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA612D1C83A9A200D34BAC /* MailTableViewCell.m */; };
+		D9AA61811C83FCCF00D34BAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA60D41C8356B900D34BAC /* AppDelegate.m */; };
+		D9EB4C6A1C840D08009DE9EA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EB4C691C840D08009DE9EA /* Message.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9AA60EA1C8356B900D34BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9AA60C51C8356B800D34BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9AA60CC1C8356B900D34BAC;
+			remoteInfo = "Zemoga Obj-c";
+		};
+		D9AA60F51C8356B900D34BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9AA60C51C8356B800D34BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9AA60CC1C8356B900D34BAC;
+			remoteInfo = "Zemoga Obj-c";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67C8BB50CD53CD7B54A369A5 /* Pods-Zemoga Obj-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Obj-c.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c.debug.xcconfig"; sourceTree = "<group>"; };
+		828CC99F218627351E7494C3 /* Pods_Zemoga_Obj_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zemoga_Obj_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FCE65D1991C70CD507BAE3 /* Pods-Zemoga Obj-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Obj-c.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c.release.xcconfig"; sourceTree = "<group>"; };
+		D9AA60CD1C8356B900D34BAC /* Prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60D11C8356B900D34BAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9AA60D31C8356B900D34BAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9AA60D41C8356B900D34BAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9AA60D61C8356B900D34BAC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D9AA60D71C8356B900D34BAC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D9AA60D91C8356B900D34BAC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D9AA60DA1C8356B900D34BAC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D9AA60DD1C8356B900D34BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9AA60DF1C8356B900D34BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9AA60E21C8356B900D34BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9AA60E41C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9AA60E91C8356B900D34BAC /* Prueba.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60ED1C8356B900D34BAC /* Zemoga_Obj_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zemoga_Obj_cTests.m; sourceTree = "<group>"; };
+		D9AA60EF1C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9AA60F41C8356B900D34BAC /* Prueba.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60F81C8356B900D34BAC /* Zemoga_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zemoga_Obj_cUITests.m; sourceTree = "<group>"; };
+		D9AA60FA1C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9AA61111C835B6B00D34BAC /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		D9AA61121C835B6B00D34BAC /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		D9AA61131C835B6B00D34BAC /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		D9AA61141C835B6B00D34BAC /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		D9AA61171C835D1600D34BAC /* MessageModelMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelMapping.h; sourceTree = "<group>"; };
+		D9AA61181C835D1600D34BAC /* MessageModelMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelMapping.m; sourceTree = "<group>"; };
+		D9AA611A1C835F8200D34BAC /* ResponseModelMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModelMapping.h; sourceTree = "<group>"; };
+		D9AA611B1C835F8200D34BAC /* ResponseModelMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModelMapping.m; sourceTree = "<group>"; };
+		D9AA611D1C8364B700D34BAC /* DetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewModel.h; sourceTree = "<group>"; };
+		D9AA611E1C8364B700D34BAC /* DetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewModel.m; sourceTree = "<group>"; };
+		D9AA61201C83681900D34BAC /* MasterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewModel.h; sourceTree = "<group>"; };
+		D9AA61211C83681900D34BAC /* MasterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewModel.m; sourceTree = "<group>"; };
+		D9AA61261C83A64E00D34BAC /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		D9AA61271C83A64E00D34BAC /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		D9AA61291C83A73200D34BAC /* AppAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAppearance.h; sourceTree = "<group>"; };
+		D9AA612A1C83A73200D34BAC /* AppAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAppearance.m; sourceTree = "<group>"; };
+		D9AA612C1C83A9A200D34BAC /* MailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTableViewCell.h; sourceTree = "<group>"; };
+		D9AA612D1C83A9A200D34BAC /* MailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTableViewCell.m; sourceTree = "<group>"; };
+		D9AA612F1C83AD6500D34BAC /* indicatorDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indicatorDotView.h; sourceTree = "<group>"; };
+		D9EB4C681C840D08009DE9EA /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		D9EB4C691C840D08009DE9EA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9AA60CA1C8356B900D34BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFA21C732BEE3A28CC6B069 /* Pods_Zemoga_Obj_c.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60E61C8356B900D34BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60F11C8356B900D34BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2201BA3ACBE53AD356697C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828CC99F218627351E7494C3 /* Pods_Zemoga_Obj_c.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEBFC2AC066CD7678A182CD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67C8BB50CD53CD7B54A369A5 /* Pods-Zemoga Obj-c.debug.xcconfig */,
+				86FCE65D1991C70CD507BAE3 /* Pods-Zemoga Obj-c.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9AA60C41C8356B800D34BAC = {
+			isa = PBXGroup;
+			children = (
+				D9AA60CF1C8356B900D34BAC /* Zemoga Obj-c */,
+				D9AA60EC1C8356B900D34BAC /* Zemoga Obj-cTests */,
+				D9AA60F71C8356B900D34BAC /* Zemoga Obj-cUITests */,
+				D9AA60CE1C8356B900D34BAC /* Products */,
+				BEBFC2AC066CD7678A182CD6 /* Pods */,
+				2201BA3ACBE53AD356697C36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9AA60CE1C8356B900D34BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60CD1C8356B900D34BAC /* Prueba.app */,
+				D9AA60E91C8356B900D34BAC /* Prueba.xctest */,
+				D9AA60F41C8356B900D34BAC /* Prueba.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9AA60CF1C8356B900D34BAC /* Zemoga Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA610F1C835AEC00D34BAC /* Appearance */,
+				D9AA61071C835AA900D34BAC /* Controller */,
+				D9AA61091C835ABC00D34BAC /* Model */,
+				D9AA610D1C835ADA00D34BAC /* Network */,
+				D9AA61101C835AFD00D34BAC /* Storyboard */,
+				D9AA60D01C8356B900D34BAC /* Supporting Files */,
+				D9AA610C1C835AD300D34BAC /* View */,
+				D9AA61081C835AB600D34BAC /* ViewModel */,
+			);
+			path = "Zemoga Obj-c";
+			sourceTree = "<group>";
+		};
+		D9AA60D01C8356B900D34BAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60D31C8356B900D34BAC /* AppDelegate.h */,
+				D9AA60D41C8356B900D34BAC /* AppDelegate.m */,
+				D9AA60E41C8356B900D34BAC /* Info.plist */,
+				D9AA60DF1C8356B900D34BAC /* Assets.xcassets */,
+				D9AA60D11C8356B900D34BAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9AA60EC1C8356B900D34BAC /* Zemoga Obj-cTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60ED1C8356B900D34BAC /* Zemoga_Obj_cTests.m */,
+				D9AA60EF1C8356B900D34BAC /* Info.plist */,
+			);
+			path = "Zemoga Obj-cTests";
+			sourceTree = "<group>";
+		};
+		D9AA60F71C8356B900D34BAC /* Zemoga Obj-cUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60F81C8356B900D34BAC /* Zemoga_Obj_cUITests.m */,
+				D9AA60FA1C8356B900D34BAC /* Info.plist */,
+			);
+			path = "Zemoga Obj-cUITests";
+			sourceTree = "<group>";
+		};
+		D9AA61071C835AA900D34BAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60D91C8356B900D34BAC /* DetailViewController.h */,
+				D9AA60DA1C8356B900D34BAC /* DetailViewController.m */,
+				D9AA60D61C8356B900D34BAC /* MasterViewController.h */,
+				D9AA60D71C8356B900D34BAC /* MasterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D9AA61081C835AB600D34BAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA611D1C8364B700D34BAC /* DetailViewModel.h */,
+				D9AA611E1C8364B700D34BAC /* DetailViewModel.m */,
+				D9AA61201C83681900D34BAC /* MasterViewModel.h */,
+				D9AA61211C83681900D34BAC /* MasterViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9AA61091C835ABC00D34BAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA610B1C835ACB00D34BAC /* MappingModel */,
+				D9AA610A1C835AC300D34BAC /* BaseModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D9AA610A1C835AC300D34BAC /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9EB4C681C840D08009DE9EA /* Message.h */,
+				D9EB4C691C840D08009DE9EA /* Message.m */,
+			);
+			name = BaseModel;
+			sourceTree = "<group>";
+		};
+		D9AA610B1C835ACB00D34BAC /* MappingModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA61171C835D1600D34BAC /* MessageModelMapping.h */,
+				D9AA61181C835D1600D34BAC /* MessageModelMapping.m */,
+				D9AA611A1C835F8200D34BAC /* ResponseModelMapping.h */,
+				D9AA611B1C835F8200D34BAC /* ResponseModelMapping.m */,
+			);
+			name = MappingModel;
+			sourceTree = "<group>";
+		};
+		D9AA610C1C835AD300D34BAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA612C1C83A9A200D34BAC /* MailTableViewCell.h */,
+				D9AA612D1C83A9A200D34BAC /* MailTableViewCell.m */,
+				D9AA612F1C83AD6500D34BAC /* indicatorDotView.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D9AA610D1C835ADA00D34BAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA61111C835B6B00D34BAC /* APIManager.h */,
+				D9AA61121C835B6B00D34BAC /* APIManager.m */,
+				D9AA61131C835B6B00D34BAC /* SessionManager.h */,
+				D9AA61141C835B6B00D34BAC /* SessionManager.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D9AA610F1C835AEC00D34BAC /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA61261C83A64E00D34BAC /* UIColor+Additions.h */,
+				D9AA61271C83A64E00D34BAC /* UIColor+Additions.m */,
+				D9AA61291C83A73200D34BAC /* AppAppearance.h */,
+				D9AA612A1C83A73200D34BAC /* AppAppearance.m */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
+		D9AA61101C835AFD00D34BAC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D9AA60E11C8356B900D34BAC /* LaunchScreen.storyboard */,
+				D9AA60DC1C8356B900D34BAC /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9AA60CC1C8356B900D34BAC /* Prueba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Prueba" */;
+			buildPhases = (
+				844CA743A0FED548145187AC /* Check Pods Manifest.lock */,
+				D9AA60C91C8356B900D34BAC /* Sources */,
+				D9AA60CA1C8356B900D34BAC /* Frameworks */,
+				D9AA60CB1C8356B900D34BAC /* Resources */,
+				DDCBDDA5D60A868272A2EFF4 /* Embed Pods Frameworks */,
+				07721FC308EE48AC2039961D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prueba;
+			productName = "Zemoga Obj-c";
+			productReference = D9AA60CD1C8356B900D34BAC /* Prueba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9AA60E81C8356B900D34BAC /* PruebaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaTests" */;
+			buildPhases = (
+				D9AA60E51C8356B900D34BAC /* Sources */,
+				D9AA60E61C8356B900D34BAC /* Frameworks */,
+				D9AA60E71C8356B900D34BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9AA60EB1C8356B900D34BAC /* PBXTargetDependency */,
+			);
+			name = PruebaTests;
+			productName = "Zemoga Obj-cTests";
+			productReference = D9AA60E91C8356B900D34BAC /* Prueba.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9AA60F31C8356B900D34BAC /* PruebaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaUITests" */;
+			buildPhases = (
+				D9AA60F01C8356B900D34BAC /* Sources */,
+				D9AA60F11C8356B900D34BAC /* Frameworks */,
+				D9AA60F21C8356B900D34BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9AA60F61C8356B900D34BAC /* PBXTargetDependency */,
+			);
+			name = PruebaUITests;
+			productName = "Zemoga Obj-cUITests";
+			productReference = D9AA60F41C8356B900D34BAC /* Prueba.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9AA60C51C8356B800D34BAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Santiago Avila Arroyave";
+				TargetAttributes = {
+					D9AA60CC1C8356B900D34BAC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D9AA60E81C8356B900D34BAC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D9AA60CC1C8356B900D34BAC;
+					};
+					D9AA60F31C8356B900D34BAC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D9AA60CC1C8356B900D34BAC;
+					};
+				};
+			};
+			buildConfigurationList = D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Prueba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9AA60C41C8356B800D34BAC;
+			productRefGroup = D9AA60CE1C8356B900D34BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9AA60CC1C8356B900D34BAC /* Prueba */,
+				D9AA60E81C8356B900D34BAC /* PruebaTests */,
+				D9AA60F31C8356B900D34BAC /* PruebaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9AA60CB1C8356B900D34BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA60E31C8356B900D34BAC /* LaunchScreen.storyboard in Resources */,
+				D9AA60E01C8356B900D34BAC /* Assets.xcassets in Resources */,
+				D9AA60DE1C8356B900D34BAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60E71C8356B900D34BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60F21C8356B900D34BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07721FC308EE48AC2039961D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844CA743A0FED548145187AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDCBDDA5D60A868272A2EFF4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9AA60C91C8356B900D34BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA61161C835B6B00D34BAC /* SessionManager.m in Sources */,
+				D9AA611F1C8364B700D34BAC /* DetailViewModel.m in Sources */,
+				D9AA60D81C8356B900D34BAC /* MasterViewController.m in Sources */,
+				D9AA61221C83681900D34BAC /* MasterViewModel.m in Sources */,
+				D9AA61191C835D1600D34BAC /* MessageModelMapping.m in Sources */,
+				D9AA61811C83FCCF00D34BAC /* AppDelegate.m in Sources */,
+				D9EB4C6A1C840D08009DE9EA /* Message.m in Sources */,
+				D9AA60D21C8356B900D34BAC /* main.m in Sources */,
+				D9AA611C1C835F8200D34BAC /* ResponseModelMapping.m in Sources */,
+				D9AA61281C83A64E00D34BAC /* UIColor+Additions.m in Sources */,
+				D9AA60DB1C8356B900D34BAC /* DetailViewController.m in Sources */,
+				D9AA612E1C83A9A200D34BAC /* MailTableViewCell.m in Sources */,
+				D9AA61151C835B6B00D34BAC /* APIManager.m in Sources */,
+				D9AA612B1C83A73200D34BAC /* AppAppearance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60E51C8356B900D34BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA60EE1C8356B900D34BAC /* Zemoga_Obj_cTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AA60F01C8356B900D34BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA60F91C8356B900D34BAC /* Zemoga_Obj_cUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9AA60EB1C8356B900D34BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9AA60CC1C8356B900D34BAC /* Prueba */;
+			targetProxy = D9AA60EA1C8356B900D34BAC /* PBXContainerItemProxy */;
+		};
+		D9AA60F61C8356B900D34BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9AA60CC1C8356B900D34BAC /* Prueba */;
+			targetProxy = D9AA60F51C8356B900D34BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9AA60DC1C8356B900D34BAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9AA60DD1C8356B900D34BAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9AA60E11C8356B900D34BAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9AA60E21C8356B900D34BAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9AA60FB1C8356B900D34BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9AA60FC1C8356B900D34BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9AA60FE1C8356B900D34BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C8BB50CD53CD7B54A369A5 /* Pods-Zemoga Obj-c.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Zemoga Obj-c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-c";
+				PRODUCT_NAME = Prueba;
+			};
+			name = Debug;
+		};
+		D9AA60FF1C8356B900D34BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86FCE65D1991C70CD507BAE3 /* Pods-Zemoga Obj-c.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Zemoga Obj-c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-c";
+				PRODUCT_NAME = Prueba;
+			};
+			name = Release;
+		};
+		D9AA61011C8356B900D34BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Zemoga Obj-cTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cTests";
+				PRODUCT_NAME = Prueba;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba.app/Prueba";
+			};
+			name = Debug;
+		};
+		D9AA61021C8356B900D34BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Zemoga Obj-cTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cTests";
+				PRODUCT_NAME = Prueba;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba.app/Prueba";
+			};
+			name = Release;
+		};
+		D9AA61041C8356B900D34BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Zemoga Obj-cUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cUITests";
+				PRODUCT_NAME = Prueba;
+				TEST_TARGET_NAME = "Zemoga Obj-c";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D9AA61051C8356B900D34BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Zemoga Obj-cUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cUITests";
+				PRODUCT_NAME = Prueba;
+				TEST_TARGET_NAME = "Zemoga Obj-c";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Prueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9AA60FB1C8356B900D34BAC /* Debug */,
+				D9AA60FC1C8356B900D34BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Prueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9AA60FE1C8356B900D34BAC /* Debug */,
+				D9AA60FF1C8356B900D34BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9AA61011C8356B900D34BAC /* Debug */,
+				D9AA61021C8356B900D34BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9AA61041C8356B900D34BAC /* Debug */,
+				D9AA61051C8356B900D34BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9AA60C51C8356B800D34BAC /* Project object */;
+}
