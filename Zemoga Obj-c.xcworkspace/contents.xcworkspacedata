@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/URpin/Documents/Apps/MessagesApp/Zemoga Obj-c.xcodeproj">
+      location = "group:Zemoga Obj-c.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Zemoga Obj-c.xcodeproj">
    </FileRef>
 </Workspace>
