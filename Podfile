@@ -9,9 +9,7 @@ target 'Zemoga Obj-c' do
 pod 'AFNetworking', '~> 3.0'
 pod 'KVNProgress'
 pod 'Mantle'
-pod 'ReactiveCocoa'
-pod 'RxSwift',    '~> 2.0'
-pod 'RxCocoa',    '~> 2.0'  
+pod 'ReactiveCocoa'  
 
 end
 

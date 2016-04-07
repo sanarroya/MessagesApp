@@ -50,7 +50,7 @@
 		67C8BB50CD53CD7B54A369A5 /* Pods-Zemoga Obj-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Obj-c.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c.debug.xcconfig"; sourceTree = "<group>"; };
 		828CC99F218627351E7494C3 /* Pods_Zemoga_Obj_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zemoga_Obj_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FCE65D1991C70CD507BAE3 /* Pods-Zemoga Obj-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Obj-c.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zemoga Obj-c/Pods-Zemoga Obj-c.release.xcconfig"; sourceTree = "<group>"; };
-		D9AA60CD1C8356B900D34BAC /* Prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60CD1C8356B900D34BAC /* Zemoga Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zemoga Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AA60D11C8356B900D34BAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9AA60D31C8356B900D34BAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9AA60D41C8356B900D34BAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,10 +62,10 @@
 		D9AA60DF1C8356B900D34BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9AA60E21C8356B900D34BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AA60E41C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9AA60E91C8356B900D34BAC /* Prueba.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60E91C8356B900D34BAC /* Zemoga Obj-c.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zemoga Obj-c.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AA60ED1C8356B900D34BAC /* Zemoga_Obj_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zemoga_Obj_cTests.m; sourceTree = "<group>"; };
 		D9AA60EF1C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9AA60F41C8356B900D34BAC /* Prueba.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prueba.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AA60F41C8356B900D34BAC /* Zemoga Obj-c.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zemoga Obj-c.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AA60F81C8356B900D34BAC /* Zemoga_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zemoga_Obj_cUITests.m; sourceTree = "<group>"; };
 		D9AA60FA1C8356B900D34BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9AA61111C835B6B00D34BAC /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
@@ -149,9 +149,9 @@
 		D9AA60CE1C8356B900D34BAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9AA60CD1C8356B900D34BAC /* Prueba.app */,
-				D9AA60E91C8356B900D34BAC /* Prueba.xctest */,
-				D9AA60F41C8356B900D34BAC /* Prueba.xctest */,
+				D9AA60CD1C8356B900D34BAC /* Zemoga Obj-c.app */,
+				D9AA60E91C8356B900D34BAC /* Zemoga Obj-c.xctest */,
+				D9AA60F41C8356B900D34BAC /* Zemoga Obj-c.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,9 +296,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9AA60CC1C8356B900D34BAC /* Prueba */ = {
+		D9AA60CC1C8356B900D34BAC /* Zemoga Obj-c */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Prueba" */;
+			buildConfigurationList = D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-c" */;
 			buildPhases = (
 				844CA743A0FED548145187AC /* Check Pods Manifest.lock */,
 				D9AA60C91C8356B900D34BAC /* Sources */,
@@ -311,14 +311,14 @@
 			);
 			dependencies = (
 			);
-			name = Prueba;
+			name = "Zemoga Obj-c";
 			productName = "Zemoga Obj-c";
-			productReference = D9AA60CD1C8356B900D34BAC /* Prueba.app */;
+			productReference = D9AA60CD1C8356B900D34BAC /* Zemoga Obj-c.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D9AA60E81C8356B900D34BAC /* PruebaTests */ = {
+		D9AA60E81C8356B900D34BAC /* Zemoga Obj-cTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaTests" */;
+			buildConfigurationList = D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-cTests" */;
 			buildPhases = (
 				D9AA60E51C8356B900D34BAC /* Sources */,
 				D9AA60E61C8356B900D34BAC /* Frameworks */,
@@ -329,14 +329,14 @@
 			dependencies = (
 				D9AA60EB1C8356B900D34BAC /* PBXTargetDependency */,
 			);
-			name = PruebaTests;
+			name = "Zemoga Obj-cTests";
 			productName = "Zemoga Obj-cTests";
-			productReference = D9AA60E91C8356B900D34BAC /* Prueba.xctest */;
+			productReference = D9AA60E91C8356B900D34BAC /* Zemoga Obj-c.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D9AA60F31C8356B900D34BAC /* PruebaUITests */ = {
+		D9AA60F31C8356B900D34BAC /* Zemoga Obj-cUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaUITests" */;
+			buildConfigurationList = D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-cUITests" */;
 			buildPhases = (
 				D9AA60F01C8356B900D34BAC /* Sources */,
 				D9AA60F11C8356B900D34BAC /* Frameworks */,
@@ -347,9 +347,9 @@
 			dependencies = (
 				D9AA60F61C8356B900D34BAC /* PBXTargetDependency */,
 			);
-			name = PruebaUITests;
+			name = "Zemoga Obj-cUITests";
 			productName = "Zemoga Obj-cUITests";
-			productReference = D9AA60F41C8356B900D34BAC /* Prueba.xctest */;
+			productReference = D9AA60F41C8356B900D34BAC /* Zemoga Obj-c.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -374,7 +374,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Prueba" */;
+			buildConfigurationList = D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Zemoga Obj-c" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -387,9 +387,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9AA60CC1C8356B900D34BAC /* Prueba */,
-				D9AA60E81C8356B900D34BAC /* PruebaTests */,
-				D9AA60F31C8356B900D34BAC /* PruebaUITests */,
+				D9AA60CC1C8356B900D34BAC /* Zemoga Obj-c */,
+				D9AA60E81C8356B900D34BAC /* Zemoga Obj-cTests */,
+				D9AA60F31C8356B900D34BAC /* Zemoga Obj-cUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -512,12 +512,12 @@
 /* Begin PBXTargetDependency section */
 		D9AA60EB1C8356B900D34BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9AA60CC1C8356B900D34BAC /* Prueba */;
+			target = D9AA60CC1C8356B900D34BAC /* Zemoga Obj-c */;
 			targetProxy = D9AA60EA1C8356B900D34BAC /* PBXContainerItemProxy */;
 		};
 		D9AA60F61C8356B900D34BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9AA60CC1C8356B900D34BAC /* Prueba */;
+			target = D9AA60CC1C8356B900D34BAC /* Zemoga Obj-c */;
 			targetProxy = D9AA60F51C8356B900D34BAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -632,7 +632,7 @@
 				INFOPLIST_FILE = "Zemoga Obj-c/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-c";
-				PRODUCT_NAME = Prueba;
+				PRODUCT_NAME = "Zemoga Obj-c";
 			};
 			name = Debug;
 		};
@@ -644,7 +644,7 @@
 				INFOPLIST_FILE = "Zemoga Obj-c/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-c";
-				PRODUCT_NAME = Prueba;
+				PRODUCT_NAME = "Zemoga Obj-c";
 			};
 			name = Release;
 		};
@@ -655,8 +655,8 @@
 				INFOPLIST_FILE = "Zemoga Obj-cTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cTests";
-				PRODUCT_NAME = Prueba;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba.app/Prueba";
+				PRODUCT_NAME = "Zemoga Obj-c";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga Obj-c.app/Zemoga Obj-c";
 			};
 			name = Debug;
 		};
@@ -667,8 +667,8 @@
 				INFOPLIST_FILE = "Zemoga Obj-cTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cTests";
-				PRODUCT_NAME = Prueba;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba.app/Prueba";
+				PRODUCT_NAME = "Zemoga Obj-c";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga Obj-c.app/Zemoga Obj-c";
 			};
 			name = Release;
 		};
@@ -678,7 +678,7 @@
 				INFOPLIST_FILE = "Zemoga Obj-cUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cUITests";
-				PRODUCT_NAME = Prueba;
+				PRODUCT_NAME = "Zemoga Obj-c";
 				TEST_TARGET_NAME = "Zemoga Obj-c";
 				USES_XCTRUNNER = YES;
 			};
@@ -690,7 +690,7 @@
 				INFOPLIST_FILE = "Zemoga Obj-cUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zemoga.Zemoga-Obj-cUITests";
-				PRODUCT_NAME = Prueba;
+				PRODUCT_NAME = "Zemoga Obj-c";
 				TEST_TARGET_NAME = "Zemoga Obj-c";
 				USES_XCTRUNNER = YES;
 			};
@@ -699,7 +699,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Prueba" */ = {
+		D9AA60C81C8356B800D34BAC /* Build configuration list for PBXProject "Zemoga Obj-c" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9AA60FB1C8356B900D34BAC /* Debug */,
@@ -708,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Prueba" */ = {
+		D9AA60FD1C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-c" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9AA60FE1C8356B900D34BAC /* Debug */,
@@ -717,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaTests" */ = {
+		D9AA61001C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-cTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9AA61011C8356B900D34BAC /* Debug */,
@@ -726,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "PruebaUITests" */ = {
+		D9AA61031C8356B900D34BAC /* Build configuration list for PBXNativeTarget "Zemoga Obj-cUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9AA61041C8356B900D34BAC /* Debug */,

@@ -89,8 +89,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Zemoga Obj-c/Mantle.framework"
   install_framework "Pods-Zemoga Obj-c/ReactiveCocoa.framework"
   install_framework "Pods-Zemoga Obj-c/Result.framework"
-  install_framework "Pods-Zemoga Obj-c/RxCocoa.framework"
-  install_framework "Pods-Zemoga Obj-c/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Zemoga Obj-c/AFNetworking.framework"
@@ -98,6 +96,4 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Zemoga Obj-c/Mantle.framework"
   install_framework "Pods-Zemoga Obj-c/ReactiveCocoa.framework"
   install_framework "Pods-Zemoga Obj-c/Result.framework"
-  install_framework "Pods-Zemoga Obj-c/RxCocoa.framework"
-  install_framework "Pods-Zemoga Obj-c/RxSwift.framework"
 fi
